@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+	"repository": {
+		"url": "git+https://github.com/betadv/personalwebsitenewstructure.git"
+	},
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-		"build": "webpack",
-		"prod": "node dist/final.js"
+    "build": "npm webpack",
+    "prod": "node dist/final.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "BetaDv",
@@ -21,8 +26,10 @@
     "node-fetch": "^3.2.6"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "nodemon": "^3.0.1",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-		"nodemon": "^3.0.1"
-  }
+    "webpack-cli": "^5.1.4"
+  },
+	"homepage": "http://betadv.github.io/personalwebsitenewstructure"
 }
