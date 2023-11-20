@@ -1,0 +1,41 @@
+	<!-- MAIN -->
+		<title><%= _seo.website.title %></title>
+		<meta name="description" content="<%= _seo.website.description %>">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- DISCORD EMBED SETTINGS -->
+		<meta name="theme-color" content="<%= _seo.embed.color %>">
+		<meta name="twitter:title" content="<%= _seo.website.title %>">
+		<meta name="twitter:description" content="<%= _seo.website.description %>">
+		<meta name="twitter:image" content="<%= _seo.embed.image %>">
+		<meta name="twitter:card" content="summary_large_image">
+	<!-- OTHER SEO SETTINGS -->
+		<meta property="og:site_name" content="<%= _seo.website.title %>">
+		<meta name="color-scheme" content="light only">
+		<meta property="og:title" content="<%= _seo.website.title %>">
+		<meta property="og:url" content="<%= _config.website.url %>">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="<%= _seo.website.description %>">
+		<link rel="icon" type="image/x-icon" href="<%= _seo.website.favicon %>">
+		<link rel="canonical" href="<%= _config.website.url %>">
+	
+	
+  <!-- SOCIAL MEDIA LINKS -->
+  	<script type="application/ld+json">
+			<%- JSON.stringify(_seo.searchEntry) %>
+		</script>
+
+	
+	<!-- PRELOAD IMAGES -->
+    <link rel="preload" as="image" href="assets/images/favicon.ico">
+		<link rel="preload" as="image" href="assets/images/background_large.jpg">
+		<link rel="preload" as="image" href="assets/images/background_medium.jpg">
+
+	<!-- LOAD CSS FILES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- SITEMAP -->
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="/assets/sitemap.xml">
