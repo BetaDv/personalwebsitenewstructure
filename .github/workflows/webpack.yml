@@ -27,5 +27,5 @@ jobs:
         npm install
         npm run build
         git config --global user.email "betadv.yt@gmail.com"
-        git config --global user.name "BetaDv"
+        git config --global user.name "betadv"
         npm run deploy
