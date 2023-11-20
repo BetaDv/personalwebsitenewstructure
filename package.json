@@ -10,7 +10,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build": "npx webpack",
-    "prod": "node dist/final.js",
+    "prod": "node dist/bundle.js",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
   },
