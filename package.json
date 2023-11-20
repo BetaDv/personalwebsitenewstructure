@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "npm webpack",
+    "build": "npx webpack",
     "prod": "node dist/final.js",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
