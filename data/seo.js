@@ -19,7 +19,7 @@ module.exports = {
 		name: "BetaDv",
 		image: "/images/image01.jpg",
 		description: "I'm BetaDv, however feel free to call me Beta! Feel free to connect with me on social media!",
-		url: "https://betadv.lag.tf/",
+		url: "https://betadv.xyz/",
 		sameAs: [
 			"https://www.instagram.com/betadv_/",
 			"https://www.tiktok.com/@betadv_",
