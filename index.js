@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
 });
 
 // START WEBSERVER
-app.listen(3000, () => {
+app.listen(_config.port, () => {
     console.log('Server started on port 3000');
 });
