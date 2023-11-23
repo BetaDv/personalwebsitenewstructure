@@ -1,6 +1,6 @@
 module.exports = {
 	website: {
-		port: 3000,
+		port: 8080,
 		url: "https://betadv.xyz"
 	},
 	author: {
